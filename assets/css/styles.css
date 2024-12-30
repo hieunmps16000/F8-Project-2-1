@@ -52,7 +52,9 @@ a {
     position: sticky;
     top: -40px;
     left: 0;
+    z-index: 1;
     width: 100%;
+    background: #fff;
 }
 
 .navbar {
@@ -104,4 +106,241 @@ a {
 .action__btn:hover {
     color: #fff;
     background: #1ebfc1;
+}
+
+.hero {
+    margin: 50px 0 104px 0;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__content {
+    width: 39%;
+    flex-shrink: 0;
+}
+
+.hero__label {
+    color: #767e7e;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.hero__heading {
+    margin-top: 18px;
+    color: #0d1111;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: 1.16;
+}
+
+.hero__desc {
+    margin-top: 46px;
+    color: #9da6a5;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.77;
+}
+
+.hero__cta {
+    margin-top: 52px;
+    display: flex;
+    align-items: center;
+}
+
+.hero__btn {
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero-video__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    margin-left: 50px;
+    border-radius: 50%;
+    color: #1ebfc1;
+    background: #fff;
+    box-shadow: 0px 22px 50px 0px #0000000d;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.hero__media {
+    position: relative;
+    width: 49%;
+    background: #e0f7f6;
+}
+
+.hero__img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Hero courses */
+.hero-course {
+    position: absolute;
+    top: 148px;
+    left: -40px;
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    padding: 18px 24px;
+    border-radius: 18px;
+    background: #fefefd;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero-course__icon {
+    position: relative;
+    color: #ff8282;
+}
+
+.hero-course__icon::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 4px;
+    right: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background: #fff;
+}
+
+.hero-course__text {
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.hero-course__text:last-child {
+    margin-top: 8px;
+}
+
+/* Hero schedules */
+.hero-schedules {
+    position: absolute;
+    bottom: 46px;
+    left: -64px;
+    width: 124px;
+    padding: 16px 24px 24px;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero-schedules__title {
+    margin-bottom: 16px;
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.skeleton {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    background: #edf1f5;
+}
+
+.skeleton::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 999px;
+    background: #fb9899;
+}
+
+.skeleton:nth-of-type(1)::after {
+    width: 52%;
+}
+
+.skeleton:nth-of-type(2) {
+    margin-top: 12px;
+}
+
+.skeleton:nth-of-type(2)::after {
+    width: 69%;
+}
+
+.skeleton:nth-of-type(3) {
+    margin-top: 10px;
+}
+
+.skeleton:nth-of-type(3)::after {
+    width: 44%;
+}
+
+.skeleton:nth-of-type(4) {
+    margin: 16px auto 0 auto;
+    width: 26px;
+}
+
+.skeleton:nth-of-type(4)::after {
+    width: 0;
+}
+
+/* Hero student */
+.hero-student {
+    position: absolute;
+    bottom: 42px;
+    right: 44px;
+    padding: 16px 34px;
+    border-radius: 24px;
+    background: #fefefd;
+    box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero-student__title {
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.hero-student__images {
+    margin-top: 8px;
+    display: flex;
+}
+
+.hero-student__img,
+.hero-student__more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33px;
+    height: 33px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: -7px;
+    background: #1ebfc1;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.hero-student__img:nth-child(1) {
+    background: #1ebfc1;
+    margin-left: 0;
+}
+
+.hero-student__img:nth-child(2) {
+    background: #ffc147;
+}
+
+.hero-student__img:nth-child(3) {
+    background: #ff947a;
+}
+
+.hero-student__img:nth-child(4) {
+    background: #bf83ff;
 }

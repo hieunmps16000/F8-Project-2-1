@@ -46,6 +46,28 @@ a {
     opacity: 0.9;
 }
 
+.section-label {
+    margin-bottom: 18px;
+    color: #767e7e;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.section-heading {
+    color: #0d1111;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1.33;
+}
+
+.section-desc {
+    color: #767e7e;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.77;
+}
+
 /* Header */
 .header-fixed {
     padding-top: 40px;
@@ -343,4 +365,71 @@ a {
 
 .hero-student__img:nth-child(4) {
     background: #bf83ff;
+}
+
+/* Feature */
+.feature {
+    padding: 104px 0 65px 0;
+}
+
+.feature__heading {
+    width: 577px;
+}
+
+.feature__desc {
+    margin-top: 18px;
+    width: 590px;
+}
+
+.feature__list {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 200px;
+}
+
+.feature-item__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 106px;
+    height: 106px;
+    border-radius: 18px;
+    color: #fff;
+    background: #ffc147;
+}
+
+.feature-item:nth-child(2) .feature-item__icon {
+    background: #ff947a;
+}
+
+.feature-item:nth-child(3) .feature-item__icon {
+    background: #bf83ff;
+}
+
+.feature-item__title {
+    margin-top: 26px;
+    color: #0d1111;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.feature-item__desc {
+    margin-top: 16px;
+    color: #9da6a5;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.68;
+}
+
+.feature-item:first-child .feature-item__desc {
+    max-width: 168px;
+}
+
+.feature-item:nth-child(2) .feature-item__desc {
+    max-width: 223px;
+}
+
+.feature-item:nth-child(3) .feature-item__desc {
+    max-width: 224px;
 }

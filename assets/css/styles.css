@@ -552,3 +552,32 @@ a {
     border-radius: 50%;
     background: #1ebfc1;
 }
+
+/* Stats */
+.stats {
+    padding: 130px 0;
+}
+
+.stats__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.stat-item {
+    padding: 0 24px;
+    text-align: center;
+}
+
+.stat-item__number {
+    color: #0d1111;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.stat-item__desc {
+    margin-top: 11px;
+    color: #767e7e;
+    font-size: 1.8rem;
+    font-weight: 400;
+}

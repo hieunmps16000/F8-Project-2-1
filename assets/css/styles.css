@@ -38,7 +38,7 @@ a {
     background: #2ac9bf;
     outline: none;
     border-radius: 14px;
-    border: 1px solid currentColor;
+    border: 1px solid #2ac9bf;
     transition: 0.25s;
 }
 
@@ -718,4 +718,23 @@ a {
     bottom: 0;
     left: 212px;
     background: #ff947a;
+}
+
+/* Subscribe */
+.subscribe {
+    padding: 76px 0 88px 0;
+    background: #def6f5;
+}
+
+.subscribe__inner {
+    display: flex;
+    align-items: center;
+}
+
+.subscribe__desc {
+    margin-top: 18px;
+}
+
+.subscribe__cta {
+    margin: 0 154px 0 auto;
 }

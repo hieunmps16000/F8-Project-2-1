@@ -738,3 +738,59 @@ a {
 .subscribe__cta {
     margin: 0 154px 0 auto;
 }
+
+/* Footer */
+.footer {
+    padding: 130px 0 50px 0;
+}
+
+.footer__row {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    column-gap: 144px;
+}
+
+.footer__heading {
+    color: #2e2e2e;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.footer__list {
+    margin-top: 25px;
+}
+
+.footer__link {
+    display: block;
+    margin-top: 20px;
+    color: #535353;
+    font-size: 1.6rem;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.footer__link:hover {
+    opacity: 0.9;
+}
+
+.footer__social-link {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    margin-top: 18px;
+    color: #535353;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.footer__social-icon {
+    color: #0b120b;
+}
+
+.footer__copyright {
+    margin-top: 80px;
+    color: #b0b5b4;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+}

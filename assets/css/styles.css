@@ -581,3 +581,141 @@ a {
     font-size: 1.8rem;
     font-weight: 400;
 }
+
+/* Feedback */
+.feedback {
+    padding: 130px 0;
+}
+
+.feedback-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feedback-item__content {
+    width: 36%;
+}
+
+.feedback-item__media {
+    position: relative;
+    width: 58%;
+    height: 480px;
+}
+
+.feedback-item__quote {
+    color: #5d6564;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.feedback-item__quote::before {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 29px;
+    margin-bottom: 28px;
+    background-image: url(../icons/double-quotation.svg);
+}
+
+.feedback-item__name {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 5px;
+    margin-top: 32px;
+    color: #767e7e;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.feedback-item__name::before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 2px;
+    background: #070707;
+}
+
+.feedback-item__name-strong {
+    color: #070707;
+    font-weight: 500;
+}
+
+.control {
+    display: flex;
+    column-gap: 30px;
+    margin-top: 52px;
+}
+
+.control__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #fff;
+    background: #2ac9bf;
+    border: none;
+    outline: none;
+}
+
+.control__btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.control__btn-next {
+    display: inline-block;
+    rotate: 180deg;
+}
+
+.feedback-item__avatar {
+    position: absolute;
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    background: #ffc147;
+}
+
+.feedback-item__avatar--active {
+    top: 107px;
+    right: 171px;
+    width: 235px;
+    height: 235px;
+    background: #ff8282;
+}
+
+.feedback-item__avatar:first-child {
+    left: 0;
+    bottom: 145px;
+}
+
+.feedback-item__avatar:nth-child(3) {
+    top: 0;
+    left: 144px;
+    width: 92px;
+    height: 92px;
+    background: #1ebfc1;
+}
+
+.feedback-item__avatar:nth-child(4) {
+    top: 19px;
+    right: 0;
+    width: 110px;
+    height: 110px;
+    background: #bf83ff;
+}
+
+.feedback-item__avatar:nth-child(5) {
+    right: 32px;
+    bottom: 29px;
+    background: #b1dfdc;
+}
+
+.feedback-item__avatar:nth-child(6) {
+    bottom: 0;
+    left: 212px;
+    background: #ff947a;
+}

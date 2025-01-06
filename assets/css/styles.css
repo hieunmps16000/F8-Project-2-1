@@ -769,7 +769,8 @@ a {
     white-space: nowrap;
 }
 
-.footer__link:hover {
+.footer__link:hover,
+.footer__social-link:hover {
     opacity: 0.9;
 }
 
@@ -784,6 +785,7 @@ a {
 }
 
 .footer__social-icon {
+    min-width: 22px;
     color: #0b120b;
 }
 

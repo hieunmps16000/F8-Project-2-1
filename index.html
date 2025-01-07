@@ -14,6 +14,7 @@
         <!-- Reset css -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
 
         <!-- Embed fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,14 +26,24 @@
     </head>
     <body>
         <!-- Header -->
-        <header class="header-fixed">
+        <header class="header header-fixed">
             <div class="container">
                 <nav class="navbar">
+                    <!-- Mobile menu -->
+                    <label class="menu-toggle" for="menu-toggle__input">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                fill="currentColor"
+                                d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </label>
+
                     <!-- Logo -->
-                    <a href="#!"><img src="./assets/img/logo.svg" alt="" class="logo" /></a>
+                    <a class="logo" href="#!"><img src="./assets/img/logo.svg" alt="" /></a>
 
                     <!-- Navigation -->
-                    <ul class="navbar__list">
+                    <ul id="menu-pc" class="navbar__list">
                         <li>
                             <a href="#!" class="navbar__link navbar__link--active">Home</a>
                         </li>
@@ -48,6 +59,12 @@
                         <li>
                             <a href="#!" class="navbar__link">Contact</a>
                         </li>
+                        <li class="show-on-mobile separator">
+                            <a href="#!" class="navbar__link">Sign in</a>
+                        </li>
+                        <li class="show-on-mobile">
+                            <a href="#!" class="navbar__link">Sign up</a>
+                        </li>
                     </ul>
 
                     <!-- Action -->
@@ -56,6 +73,24 @@
                         <a href="#!" class="btn action__btn">Sign up</a>
                     </div>
                 </nav>
+            </div>
+        </header>
+
+        <!-- Menu drawer -->
+        <header class="header-mobile">
+            <input type="checkbox" id="menu-toggle__input" class="menu-toggle__input" hidden />
+            <label class="menu-overlay" for="menu-toggle__input"></label>
+            <div class="menu-drawer">
+                <!-- Logo -->
+                <a href="#!"><img src="./assets/img/logo.svg" alt="" /></a>
+
+                <!-- Menu mobile -->
+                <ul id="menu-mobile"></ul>
+                <script>
+                    const menuMobile = document.querySelector("#menu-mobile");
+                    const menuPC = document.querySelector("#menu-pc");
+                    menuMobile.innerHTML = menuPC.innerHTML;
+                </script>
             </div>
         </header>
 
@@ -143,12 +178,16 @@
             <!-- Feature -->
             <section class="feature">
                 <div class="container">
-                    <p class="section-label">FEATURES</p>
-                    <h2 class="section-heading feature__heading">We are providing suitable features for students.</h2>
-                    <p class="section-desc feature__desc">
-                        Read our awesome feature that is absolutely suit for you. Explore the feature and know the best.
-                    </p>
-
+                    <div class="feature__content">
+                        <p class="section-label">FEATURES</p>
+                        <h2 class="section-heading feature__heading">
+                            We are providing suitable features for students.
+                        </h2>
+                        <p class="section-desc feature__desc">
+                            Read our awesome feature that is absolutely suit for you. Explore the feature and know the
+                            best.
+                        </p>
+                    </div>
                     <!-- Feature list -->
                     <div class="feature__list">
                         <!-- Feature item 1 -->

@@ -34,6 +34,7 @@ a {
     font-size: 1.8rem;
     font-weight: 600;
     text-align: center;
+    text-transform: capitalize;
     color: #fff;
     background: #2ac9bf;
     outline: none;
@@ -123,6 +124,7 @@ a {
     border-radius: 6px;
     color: #1ebfc1;
     background: #fff;
+    text-transform: initial;
 }
 
 .action__btn:hover {
@@ -160,6 +162,7 @@ a {
 }
 
 .hero__desc {
+    width: 374px;
     margin-top: 46px;
     color: #9da6a5;
     font-size: 1.8rem;
@@ -458,6 +461,7 @@ a {
     font-weight: 700;
     text-decoration: underline;
     text-underline-offset: 2px;
+    text-transform: capitalize;
 }
 
 .course__list {
@@ -512,6 +516,10 @@ a {
     color: #0d1111;
     font-size: 2.2rem;
     font-weight: 700;
+}
+
+.course-item__title {
+    text-transform: capitalize;
 }
 
 .course-item__fee {
@@ -580,6 +588,7 @@ a {
     color: #767e7e;
     font-size: 1.8rem;
     font-weight: 400;
+    text-transform: capitalize;
 }
 
 /* Feedback */
@@ -769,9 +778,9 @@ a {
     white-space: nowrap;
 }
 
-.footer__link:hover,
-.footer__social-link:hover {
-    opacity: 0.9;
+.footer__link:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 
 .footer__social-link {
@@ -782,11 +791,18 @@ a {
     color: #535353;
     font-size: 1.6rem;
     font-weight: 400;
+    transition: color 0.25s;
+}
+
+.footer__social-link:hover,
+.footer__social-link:hover .footer__social-icon {
+    color: #2ac9bf;
 }
 
 .footer__social-icon {
     min-width: 22px;
     color: #0b120b;
+    transition: color 0.25s;
 }
 
 .footer__copyright {
